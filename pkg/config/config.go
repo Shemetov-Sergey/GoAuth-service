@@ -13,8 +13,8 @@ func LoadConfig() (Config, error) {
 	viper.AddConfigPath("./pkg/config/envs")
 	viper.AddConfigPath("/GoAuth-service") //Для docker
 
-	//viper.SetConfigName("prod")
-	//viper.SetConfigType("env")
+	viper.SetConfigName("prod")
+	viper.SetConfigType("env")
 
 	viper.AutomaticEnv()
 
